@@ -34,6 +34,6 @@ LANDFIRE releases the [Scott & Burgan 40 fire behavior fuel models](https://www.
 
 The FBFM40 fuel data is natively in 30m resolution, so sampling at 500m corresponds to mapping a (approximate) 16x16 image to a vector. Here, a convolutional autoencoder is trained and employed to do this task while (semi)losslessly preserving the information about proportion of each fuel type in the grid. The latent space (dim = 3, here) then characterizes three fuel bands which form three unique fuel indices defined by the model. These are used to construct new GeoTiffs and imported along with the rest of the data. The inclusion of fuel data in mNDWS is an important novel aspect compared to NDWS, which did not consider landcover classes. 
 
-A visualization of the 40 categories (i.e. the image of 16x16 uniform arrays) in the learned latent space is picture below. 
+A visualization of the 40 categories (i.e. the image of 16x16 uniform arrays) in the learned latent space is pictured below. 
 ![alt text](latent_fuels.png "FBFM40 fuel types in the latent space. ]")
 
